@@ -3,7 +3,7 @@
 	"id": "potato_server_mod",
 	"version": "${version}",
 	"name": "Potato_server_mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "创建一个实体叫土豆服务器，打一下断开连接",
 	"authors": [
 		"ZHOU."
 	],

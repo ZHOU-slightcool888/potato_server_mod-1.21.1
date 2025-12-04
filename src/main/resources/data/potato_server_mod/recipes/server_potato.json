@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    " I ",
+    " P "
+  ],
+  "key": {
+    "R": { "item": "minecraft:iron_ingot" },
+    "I": { "item": "minecraft:potato" },
+    "P": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "item": "potato_server_mod:server_potato",
+    "count": 1
+  }
+}

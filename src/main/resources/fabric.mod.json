@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "potato_server_mod",
+	"version": "${version}",
+	"name": "Potato_server_mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"ZHOU."
+	],
+	"contact": {
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/potato_server_mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"potato_server_mod.modid.Potato_server_mod"
+		],
+		"fabric-datagen": [
+			"potato_server_mod.modid.Potato_server_modDataGenerator"
+		]
+	},
+	"mixins": [
+		"potato_server_mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

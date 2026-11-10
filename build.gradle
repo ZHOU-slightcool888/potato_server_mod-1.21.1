@@ -57,6 +57,22 @@ java {
 	targetCompatibility = JavaVersion.VERSION_21
 }
 
+// Dependency-free regressions also run locally with javac when Gradle downloads are unavailable.
+sourceSets {
+	regression {
+		compileClasspath += sourceSets.main.output
+		runtimeClasspath += sourceSets.main.output
+	}
+}
+tasks.register('regressionTest', JavaExec) {
+	dependsOn regressionClasses
+	classpath = sourceSets.regression.runtimeClasspath
+	mainClass = 'potato_server_mod.modid.show.PotatoRegressionTest'
+}
+tasks.named('check') {
+	dependsOn tasks.named('regressionTest')
+}
+
 jar {
 	inputs.property "archivesName", project.base.archivesName
 

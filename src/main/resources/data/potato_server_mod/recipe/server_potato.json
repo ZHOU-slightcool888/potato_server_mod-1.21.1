@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["IRI", "RPR", "IRI"],
+  "key": {
+    "I": {"item": "minecraft:iron_ingot"},
+    "R": {"item": "minecraft:redstone"},
+    "P": {"item": "minecraft:potato"}
+  },
+  "result": {"id": "potato_server_mod:server_potato", "count": 1}
+}

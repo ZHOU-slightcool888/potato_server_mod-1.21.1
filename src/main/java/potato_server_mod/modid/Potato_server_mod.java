@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import potato_server_mod.modid.item.FoodServerPotato;
+import potato_server_mod.modid.show.PotatoServerShow;
 
 
 public class Potato_server_mod implements ModInitializer {
@@ -23,6 +24,7 @@ public class Potato_server_mod implements ModInitializer {
                 Identifier.of(MOD_ID, "server_potato"),
                 new FoodServerPotato()
         );
+        PotatoServerShow.initialize();
         LOGGER.info("Potato Server Mod loaded!");
     }
 }
